@@ -1,0 +1,463 @@
+# What is wrong with `www.stord.com`
+
+Read on 2026-11-06: 89 pages of `https://www.stord.com`, in a real browser, logged out, one page at a time. Nothing was sent, bought or signed in to.
+
+## Links that need a look (24)
+
+Each of these links answered an error or did not answer. A person is to look at every one, whatever the site means by it: nothing here is cleared by a rule. A link leaves this list only when the team lists it, with the status it answers, in the suite's expected-links block.
+
+- `/reports/subscription` answered 404; linked from /reports/state-of-ai-2026, /reports/peak-performance-report-2025, /reports/food-and-beverage, /reports/2025-black-friday-cyber-monday-tracker; broken (SITE-02)
+- `/reports/food-and-beverage` answered 404; linked from /reports/state-of-ai-2026, /reports/peak-performance-report-2025, /reports/subscription, /reports/2025-black-friday-cyber-monday-tracker; broken (SITE-02)
+- `/industries/supplements` answered 404; linked from /industries/dtc, /industries/b2b, /industries/subscription, /industries/food-and-beverage; broken (SITE-02)
+- `/categories/supplements` answered 404; linked from /categories/apparel-and-accessories, /categories/nutrition-and-supplements, /categories/health-and-beauty, /categories/subscription; broken (SITE-02)
+- `/industries/subscription` answered 404; linked from /industries/dtc, /industries/b2b, /industries/supplements, /industries/food-and-beverage; broken (SITE-02)
+- `/categories/subscription` answered 404; linked from /categories/apparel-and-accessories, /categories/nutrition-and-supplements, /categories/supplements, /categories/health-and-beauty; broken (SITE-02)
+- `/industries/food-and-beverage` answered 404; linked from /industries/dtc, /industries/b2b, /industries/supplements, /industries/subscription; broken (SITE-02)
+- `/transportation/supplements` answered 404; linked from /transportation/retail-delivery-consolidation, /transportation/subscription, /transportation/food-and-beverage; broken (SITE-02)
+- `/transportation/subscription` answered 404; linked from /transportation/retail-delivery-consolidation, /transportation/supplements, /transportation/food-and-beverage; broken (SITE-02)
+- `/transportation/food-and-beverage` answered 404; linked from /transportation/retail-delivery-consolidation, /transportation/supplements, /transportation/subscription; broken (SITE-02)
+- `/consumer-experience/supplements` answered 404; linked from /consumer-experience/estimated-delivery-date, /consumer-experience/subscription, /consumer-experience/food-and-beverage; broken (SITE-02)
+- `/consumer-experience/subscription` answered 404; linked from /consumer-experience/estimated-delivery-date, /consumer-experience/supplements, /consumer-experience/food-and-beverage; broken (SITE-02)
+- `/consumer-experience/food-and-beverage` answered 404; linked from /consumer-experience/estimated-delivery-date, /consumer-experience/supplements, /consumer-experience/subscription; broken (SITE-02)
+- `/blog/supplements` answered 404; linked from /blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands, /blog/the-subtle-art-of-shipping-a-box, /blog/post-de-minimis-cross-border-transshiping-local-fulfillment, /blog/how-lean-logistics-saves-brands-millions, /blog/subscription and 16 more; broken (SITE-02)
+- `/blog/subscription` answered 404; linked from /blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands, /blog/the-subtle-art-of-shipping-a-box, /blog/post-de-minimis-cross-border-transshiping-local-fulfillment, /blog/supplements, /blog/how-lean-logistics-saves-brands-millions and 16 more; broken (SITE-02)
+- `/blog/food-and-beverage` answered 404; linked from /blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands, /blog/the-subtle-art-of-shipping-a-box, /blog/post-de-minimis-cross-border-transshiping-local-fulfillment, /blog/supplements, /blog/how-lean-logistics-saves-brands-millions and 16 more; broken (SITE-02)
+- `/legal/food-and-beverage` answered 404; linked from /legal/terms-and-conditions, /legal/privacy-policy, /legal/parcel-terms-02-13-26, /legal/shipment-protection-terms, /legal/terms and 3 more; broken (SITE-02)
+- `/getstord/apparel-and-accessory` answered 404; linked from /categories/apparel-and-accessories; broken (SITE-02)
+- `https://alokai.com/blog/essential-ecommerce-statistics` answered 404; linked from /blog/the-subtle-art-of-shipping-a-box; broken (SITE-33)
+- `https://go.stord.com/ecom-webinar-od` answered 404; linked from /resources; broken (SITE-33)
+- `https://go.stord.com/post-modex-webinar` answered 404; linked from /resources; broken (SITE-33)
+- `https://www.mckinsey.com/industries/logistics/our-insights/what-do-us-consumers-want-from-e-commerce-deliveries` no answer in time, asked twice; linked from /blog/the-subtle-art-of-shipping-a-box; broken (SITE-33)
+- `https://business.adobe.com/blog/generative-ai-powered-shopping-rises-with-traffic-to-retail-sites` no answer in time, asked twice; linked from /reports/state-of-ai-2026; broken (SITE-33)
+- `https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai` no answer in time, asked twice; linked from /reports/state-of-ai-2026; broken (SITE-33)
+
+Found **7 major** and **8 minor**.
+
+## major SITE-11 71 pages stop a visitor zooming
+
+**Why it matters.** On a phone a page with no viewport setting is drawn at desktop width and shrunk to fit, and Google ranks it as not mobile-friendly. A page that stops zooming fails people who need larger text \(WCAG 1.4.4\).
+
+**Likely fix.** Use \<meta name="viewport" content="width=device-width, initial-scale=1"\>, without user-scalable=no or maximum-scale=1.
+
+<details>
+<summary>71 pages</summary>
+
+- `/` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/resources` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/health` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/solution` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/fulfillment` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/parcel` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/labs` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/casestudy/stord-onboarding-for-peak-design` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/locations` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/ai` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/casestudy/how-the-zero-proof-powers-growth-with-stord` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/order-management-system` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/getstord/referral-program` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/expiration` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/returns` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/warehouse-management-system` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/getstord/get-started-cloud-based-warehouse-management-system-wms` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/consumer-experience` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/getstord/food-and-beverage` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/casestudy/how-jolie-grew-revenue-6x` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/order-management-system/order-routing` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/order-management-system/multichannel-inventory` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/categories/apparel-and-accessories` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/categories/nutrition-and-supplements` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/terms-and-conditions` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/privacy-policy` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/parcel-terms-02-13-26` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/unbox` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/getstord/nik-sharma` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/inventory-planning` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/shipment-protection` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/integrations` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/apparel-and-accessories` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/beauty` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/order-management-system/last-mile-optimization` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/industries/dtc` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/industries/b2b` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/newsroom/true-classic-avoids-delays-with-stord` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/newsroom/goodr-Partners-with-Stord` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/newsroom/stord-leadership-forbes-interview` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/the-subtle-art-of-shipping-a-box` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/post-de-minimis-cross-border-transshiping-local-fulfillment` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/reports/state-of-ai-2026` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/reports/peak-performance-report-2025` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/reports/2025-black-friday-cyber-monday-tracker` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/categories/health-and-beauty` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/transportation/retail-delivery-consolidation` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/consumer-experience/estimated-delivery-date` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/shipment-protection-terms` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/terms` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/how-lean-logistics-saves-brands-millions` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/general-terms-02-13-26` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/how-brands-can-stay-ahead-of-parcel-rate-hikes` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/what-shippers-need-to-know-amid-tariff-whiplash` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/are-branded-boxes-good-for-ecommerce` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/casestudy/quip-delights-customers-with-stord` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/navigating-dwell-time-in-ecommerce-logistics` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/key-strategies-for-international-brands-post-de-minimis` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/uk-mailing-terms` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/kitting-process-key-components-and-considerations` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/how-to-prepare-your-brand-for-peak-success` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/wms-pack-station-efficiency` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/leveling-the-commerce-playing-field-the-consumer-experience-company` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/wms-eas-of-use` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/snackpass-drives-warehouse-efficiency` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/smart-ways-to-cut-supply-chain-costs` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/q1-2025-mock-recall-report` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/g2-that-is-the-wms-question` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/legal/warehouse-terms` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+- `/blog/tariff-sales-good-or-bad` viewport \`width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\` stops zooming
+
+</details>
+
+## major SITE-20 129 scripts, style sheets and data requests on 45 pages failed to load
+
+**Why it matters.** A script or style sheet that does not load leaves part of the page unstyled or not working: a menu that does not open, a button that does nothing, a list that never fills. Visitors see it; nothing tells the site's owner.
+
+**Likely fix.** Point each at a file that exists \(a path changed in a release is the usual cause\), or remove the reference.
+
+<details>
+<summary>45 pages</summary>
+
+- `/casestudy/stord-onboarding-for-peak-design` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/supplements.json \(404\)
+- `/casestudy/how-the-zero-proof-powers-growth-with-stord` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/food-and-beverage.json \(404\)
+- `/getstord/get-started-cloud-based-warehouse-management-system-wms` 2 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/getstord/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/getstord/supplements.json \(404\)
+- `/getstord/food-and-beverage` 2 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/getstord/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/getstord/subscription.json \(404\)
+- `/casestudy/how-jolie-grew-revenue-6x` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/food-and-beverage.json \(404\)
+- `/categories/apparel-and-accessories` 2 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/categories/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/categories/supplements.json \(404\)
+- `/categories/nutrition-and-supplements` 2 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/categories/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/categories/subscription.json \(404\)
+- `/legal/terms-and-conditions` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\)
+- `/legal/privacy-policy` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\)
+- `/legal/parcel-terms-02-13-26` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\)
+- `/getstord/nik-sharma` 2 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/getstord/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/getstord/subscription.json \(404\)
+- `/industries/dtc` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/industries/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/industries/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/industries/subscription.json \(404\)
+- `/industries/b2b` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/industries/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/industries/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/industries/supplements.json \(404\)
+- `/newsroom/true-classic-avoids-delays-with-stord` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/supplements.json \(404\)
+- `/newsroom/goodr-Partners-with-Stord` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/food-and-beverage.json \(404\)
+- `/newsroom/stord-leadership-forbes-interview` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/newsroom/subscription.json \(404\)
+- `/blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/blog/the-subtle-art-of-shipping-a-box` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\)
+- `/blog/post-de-minimis-cross-border-transshiping-local-fulfillment` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\)
+- `/reports/state-of-ai-2026` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/food-and-beverage.json \(404\)
+- `/reports/peak-performance-report-2025` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/food-and-beverage.json \(404\)
+- `/reports/2025-black-friday-cyber-monday-tracker` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/reports/subscription.json \(404\)
+- `/categories/health-and-beauty` 2 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/categories/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/categories/supplements.json \(404\)
+- `/legal/shipment-protection-terms` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\)
+- `/legal/terms` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\)
+- `/blog/how-lean-logistics-saves-brands-millions` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/legal/general-terms-02-13-26` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\)
+- `/blog/how-brands-can-stay-ahead-of-parcel-rate-hikes` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\)
+- `/blog/what-shippers-need-to-know-amid-tariff-whiplash` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\)
+- `/blog/are-branded-boxes-good-for-ecommerce` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\)
+- `/casestudy/quip-delights-customers-with-stord` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/casestudy/subscription.json \(404\)
+- `/blog/navigating-dwell-time-in-ecommerce-logistics` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\)
+- `/blog/key-strategies-for-international-brands-post-de-minimis` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/legal/uk-mailing-terms` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\)
+- `/blog/kitting-process-key-components-and-considerations` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\)
+- `/blog/how-to-prepare-your-brand-for-peak-success` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\)
+- `/blog/wms-pack-station-efficiency` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/blog/leveling-the-commerce-playing-field-the-consumer-experience-company` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/blog/wms-eas-of-use` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\)
+- `/blog/snackpass-drives-warehouse-efficiency` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/blog/smart-ways-to-cut-supply-chain-costs` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\)
+- `/blog/q1-2025-mock-recall-report` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+- `/blog/g2-that-is-the-wms-question` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\)
+- `/legal/warehouse-terms` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/legal/supplements.json \(404\)
+- `/blog/tariff-sales-good-or-bad` 3 requests: /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/food-and-beverage.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/subscription.json \(404\), /\_next/data/rBYLEEiTpSi56mXXo5S-s/blog/supplements.json \(404\)
+
+</details>
+
+## major SITE-07 35 links and buttons on 29 pages have nothing for a screen reader to say
+
+**Why it matters.** A blind visitor hears only "link" or "button", with no idea where it goes or what it does; accessibility law \(the ADA, the European Accessibility Act\) counts it, and so do automated accessibility audits.
+
+**Likely fix.** Give each one words: visible text, an aria-label, or an alt on the image inside it \(an icon link to a cart: aria-label="Cart"\).
+
+<details>
+<summary>29 pages</summary>
+
+- `/casestudy/stord-onboarding-for-peak-design` 1 link or button: \`\<button class="blogpost\_arrow\_\_afY6E"\>\`
+- `/casestudy/how-the-zero-proof-powers-growth-with-stord` 1 link or button: \`\<button class="blogpost\_arrow\_\_afY6E"\>\`
+- `/getstord/referral-program` 1 link or button: \`\<a href="/"\>\`
+- `/casestudy/how-jolie-grew-revenue-6x` 1 link or button: \`\<button class="blogpost\_arrow\_\_afY6E"\>\`
+- `/newsroom/true-classic-avoids-delays-with-stord` 3 links and buttons: \`\<a ``href="https://www.linkedin.com/company/stord/">`,`` \`\<a ``href="https://twitter.com/GetStord">`,`` \`\<a `` href="https://www.facebook.com/getstord">` ``
+- `/newsroom/goodr-Partners-with-Stord` 3 links and buttons: \`\<a ``href="https://www.linkedin.com/company/stord/">`,`` \`\<a ``href="https://twitter.com/GetStord">`,`` \`\<a `` href="https://www.facebook.com/getstord">` ``
+- `/newsroom/stord-leadership-forbes-interview` 3 links and buttons: \`\<a ``href="https://www.linkedin.com/company/stord/">`,`` \`\<a ``href="https://twitter.com/GetStord">`,`` \`\<a `` href="https://www.facebook.com/getstord">` ``
+- `/blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/the-subtle-art-of-shipping-a-box` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/post-de-minimis-cross-border-transshiping-local-fulfillment` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/reports/peak-performance-report-2025` 1 link or button: \`\<button class="blogpost\_arrow\_\_hNC6t"\>\`
+- `/reports/2025-black-friday-cyber-monday-tracker` 1 link or button: \`\<button class="blogpost\_arrow\_\_hNC6t"\>\`
+- `/blog/how-lean-logistics-saves-brands-millions` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/how-brands-can-stay-ahead-of-parcel-rate-hikes` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/what-shippers-need-to-know-amid-tariff-whiplash` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/are-branded-boxes-good-for-ecommerce` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/casestudy/quip-delights-customers-with-stord` 1 link or button: \`\<button class="blogpost\_arrow\_\_afY6E"\>\`
+- `/blog/navigating-dwell-time-in-ecommerce-logistics` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/key-strategies-for-international-brands-post-de-minimis` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/kitting-process-key-components-and-considerations` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/how-to-prepare-your-brand-for-peak-success` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/wms-pack-station-efficiency` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/leveling-the-commerce-playing-field-the-consumer-experience-company` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/wms-eas-of-use` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/snackpass-drives-warehouse-efficiency` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/smart-ways-to-cut-supply-chain-costs` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/q1-2025-mock-recall-report` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/g2-that-is-the-wms-question` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+- `/blog/tariff-sales-good-or-bad` 1 link or button: \`\<button class="blogpost\_arrow\_\_ozRQt"\>\`
+
+</details>
+
+## major SITE-08 25 form fields on 22 pages have no label
+
+**Why it matters.** A screen reader announces a field with no label as "edit text", so a blind visitor cannot tell what to type; a placeholder alone vanishes once typing starts. Accessibility audits fail it.
+
+**Likely fix.** Give each field a \<label for="its id"\> \(each id used once on the page\), or an aria-label.
+
+<details>
+<summary>22 pages</summary>
+
+- `/` 3 fields: \`\<input name="email"\>\` and 2 more
+- `/health` 1 field: \`\<input name="email"\>\`
+- `/fulfillment` 1 field: \`\<input name="email"\>\`
+- `/parcel` 1 field: \`\<input name="email"\>\`
+- `/locations` 2 fields: \`\<input name="email"\>\` and 1 more
+- `/order-management-system` 1 field: \`\<input name="email"\>\`
+- `/warehouse-management-system` 1 field: \`\<input name="email"\>\`
+- `/consumer-experience` 1 field: \`\<input name="email"\>\`
+- `/order-management-system/order-routing` 1 field: \`\<input name="email"\>\`
+- `/order-management-system/multichannel-inventory` 1 field: \`\<input name="email"\>\`
+- `/categories/apparel-and-accessories` 1 field: \`\<input name="email"\>\`
+- `/categories/nutrition-and-supplements` 1 field: \`\<input name="email"\>\`
+- `/unbox` 1 field: \`\<input name="email"\>\`
+- `/inventory-planning` 1 field: \`\<input name="email"\>\`
+- `/apparel-and-accessories` 1 field: \`\<input name="email"\>\`
+- `/beauty` 1 field: \`\<input name="email"\>\`
+- `/order-management-system/last-mile-optimization` 1 field: \`\<input name="email"\>\`
+- `/industries/dtc` 1 field: \`\<input name="email"\>\`
+- `/industries/b2b` 1 field: \`\<input name="email"\>\`
+- `/categories/health-and-beauty` 1 field: \`\<input name="email"\>\`
+- `/transportation/retail-delivery-consolidation` 1 field: \`\<input name="email"\>\`
+- `/consumer-experience/estimated-delivery-date` 1 field: \`\<input name="email"\>\`
+
+</details>
+
+## major SITE-21 The site's own scripts throw 451 errors on 20 pages
+
+**Why it matters.** An error nothing catches stops the script that threw it: whatever it was doing \(a form's checks, a cart, tracking\) is left undone. Visitors never report it; it is seen only in the browser's console.
+
+**Likely fix.** Open the page with the browser's developer tools, read the console, and fix each error at the line it names.
+
+<details>
+<summary>20 pages</summary>
+
+- `/` 11 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 9 more
+- `/casestudy/stord-onboarding-for-peak-design` 38 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 36 more
+- `/casestudy/how-the-zero-proof-powers-growth-with-stord` 28 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 26 more
+- `/casestudy/how-jolie-grew-revenue-6x` 6 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 4 more
+- `/unbox` 8 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 6 more
+- `/integrations` 4 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 2 more
+- `/apparel-and-accessories` 6 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 4 more
+- `/newsroom/stord-leadership-forbes-interview` 9 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 7 more
+- `/blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands` 35 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 33 more
+- `/consumer-experience/estimated-delivery-date` 10 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 8 more
+- `/casestudy/quip-delights-customers-with-stord` 29 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 27 more
+- `/blog/navigating-dwell-time-in-ecommerce-logistics` 74 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 72 more
+- `/blog/key-strategies-for-international-brands-post-de-minimis` 27 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 25 more
+- `/blog/kitting-process-key-components-and-considerations` 27 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 25 more
+- `/blog/wms-pack-station-efficiency` 37 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 35 more
+- `/blog/leveling-the-commerce-playing-field-the-consumer-experience-company` 16 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 14 more
+- `/blog/wms-eas-of-use` 26 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 24 more
+- `/blog/snackpass-drives-warehouse-efficiency` 18 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 16 more
+- `/blog/smart-ways-to-cut-supply-chain-costs` 24 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 22 more
+- `/blog/g2-that-is-the-wms-question` 18 errors: Minified React error `#418;` visit `https://reactjs.org/docs/error-decoder.html?invariant=418` for the full message or use t, Minified React error `#423;` visit `https://reactjs.org/docs/error-decoder.html?invariant=423` for the full message or use t and 16 more
+
+</details>
+
+## major SITE-02 18 broken links: the site links to addresses that answer an error
+
+**Why it matters.** A visitor who follows one of these links reaches an error instead of the page promised.
+
+**Likely fix.** Point each link at a page that exists, or bring the page back \(or redirect its old address to where it went\).
+
+<details>
+<summary>18 pages</summary>
+
+- `/reports/subscription` answered 404; linked from /reports/state-of-ai-2026, /reports/peak-performance-report-2025, /reports/food-and-beverage, /reports/2025-black-friday-cyber-monday-tracker
+- `/reports/food-and-beverage` answered 404; linked from /reports/state-of-ai-2026, /reports/peak-performance-report-2025, /reports/subscription, /reports/2025-black-friday-cyber-monday-tracker
+- `/industries/supplements` answered 404; linked from /industries/dtc, /industries/b2b, /industries/subscription, /industries/food-and-beverage
+- `/categories/supplements` answered 404; linked from /categories/apparel-and-accessories, /categories/nutrition-and-supplements, /categories/health-and-beauty, /categories/subscription
+- `/industries/subscription` answered 404; linked from /industries/dtc, /industries/b2b, /industries/supplements, /industries/food-and-beverage
+- `/categories/subscription` answered 404; linked from /categories/apparel-and-accessories, /categories/nutrition-and-supplements, /categories/supplements, /categories/health-and-beauty
+- `/industries/food-and-beverage` answered 404; linked from /industries/dtc, /industries/b2b, /industries/supplements, /industries/subscription
+- `/transportation/supplements` answered 404; linked from /transportation/retail-delivery-consolidation, /transportation/subscription, /transportation/food-and-beverage
+- `/transportation/subscription` answered 404; linked from /transportation/retail-delivery-consolidation, /transportation/supplements, /transportation/food-and-beverage
+- `/transportation/food-and-beverage` answered 404; linked from /transportation/retail-delivery-consolidation, /transportation/supplements, /transportation/subscription
+- `/consumer-experience/supplements` answered 404; linked from /consumer-experience/estimated-delivery-date, /consumer-experience/subscription, /consumer-experience/food-and-beverage
+- `/consumer-experience/subscription` answered 404; linked from /consumer-experience/estimated-delivery-date, /consumer-experience/supplements, /consumer-experience/food-and-beverage
+- `/consumer-experience/food-and-beverage` answered 404; linked from /consumer-experience/estimated-delivery-date, /consumer-experience/supplements, /consumer-experience/subscription
+- `/blog/supplements` answered 404; linked from /blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands, /blog/the-subtle-art-of-shipping-a-box, /blog/post-de-minimis-cross-border-transshiping-local-fulfillment, /blog/how-lean-logistics-saves-brands-millions, /blog/subscription and 16 more
+- `/blog/subscription` answered 404; linked from /blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands, /blog/the-subtle-art-of-shipping-a-box, /blog/post-de-minimis-cross-border-transshiping-local-fulfillment, /blog/supplements, /blog/how-lean-logistics-saves-brands-millions and 16 more
+- `/blog/food-and-beverage` answered 404; linked from /blog/tariffs-turningpoint-and-what-it-means-for-e-commerce-brands, /blog/the-subtle-art-of-shipping-a-box, /blog/post-de-minimis-cross-border-transshiping-local-fulfillment, /blog/supplements, /blog/how-lean-logistics-saves-brands-millions and 16 more
+- `/legal/food-and-beverage` answered 404; linked from /legal/terms-and-conditions, /legal/privacy-policy, /legal/parcel-terms-02-13-26, /legal/shipment-protection-terms, /legal/terms and 3 more
+- `/getstord/apparel-and-accessory` answered 404; linked from /categories/apparel-and-accessories
+
+</details>
+
+## major SITE-33 6 links to other sites lead nowhere: the pages are gone
+
+**Why it matters.** Sites move and close: a visitor who follows one of these links meets an error page, or nothing at all, on someone else's site, and leaves thinking less of this one.
+
+**Likely fix.** Point each link at where the page lives now, or take it out. The suite's link report asks every one again on each run, and fails when one that answered stops.
+
+<details open>
+<summary>6 pages</summary>
+
+- `https://alokai.com/blog/essential-ecommerce-statistics` answered 404; linked from /blog/the-subtle-art-of-shipping-a-box
+- `https://go.stord.com/ecom-webinar-od` answered 404; linked from /resources
+- `https://go.stord.com/post-modex-webinar` answered 404; linked from /resources
+- `https://www.mckinsey.com/industries/logistics/our-insights/what-do-us-consumers-want-from-e-commerce-deliveries` no answer in time, asked twice; linked from /blog/the-subtle-art-of-shipping-a-box
+- `https://business.adobe.com/blog/generative-ai-powered-shopping-rises-with-traffic-to-retail-sites` no answer in time, asked twice; linked from /reports/state-of-ai-2026
+- `https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai` no answer in time, asked twice; linked from /reports/state-of-ai-2026
+
+</details>
+
+## minor SITE-17 3 pages have no description for search results; 11 pages share one
+
+**Why it matters.** Search results show the description under the title; without one, the search engine picks a line of the page, often the menu or a cookie notice.
+
+**Likely fix.** Give each page a \<meta name="description"\> of a sentence or two saying what it offers.
+
+<details>
+<summary>14 pages</summary>
+
+- `/newsroom/true-classic-avoids-delays-with-stord` no meta description
+- `/newsroom/goodr-Partners-with-Stord` no meta description
+- `/newsroom/stord-leadership-forbes-interview` no meta description
+- `/getstord/food-and-beverage` shares \`Stord Description\`
+- `/legal/parcel-terms-02-13-26` shares \`Stord Description\`
+- `/getstord/nik-sharma` shares \`Stord Description\`
+- `/legal/shipment-protection-terms` shares \`Stord Description\`
+- `/legal/terms` shares \`Stord Description\`
+- `/legal/general-terms-02-13-26` shares \`Stord Description\`
+- `/legal/uk-mailing-terms` shares \`Stord Description\`
+- `/legal/warehouse-terms` shares \`Stord Description\`
+- `/categories/apparel-and-accessories` shares \`Get a custom omnichannel fulfillment, freight, and/or sof...\`
+- `/categories/nutrition-and-supplements` shares \`Get a custom omnichannel fulfillment, freight, and/or sof...\`
+- `/categories/health-and-beauty` shares \`Get a custom omnichannel fulfillment, freight, and/or sof...\`
+
+</details>
+
+## minor SITE-03 6 of the site's own links redirect before they arrive
+
+**Why it matters.** Every click on one of these links costs an extra round trip before the page starts loading, and search engines see one page at two addresses.
+
+**Likely fix.** Link to each page's final address \(with or without its trailing slash, as the server serves it\).
+
+<details open>
+<summary>6 pages</summary>
+
+- `/getstord/get-started-stord-one-warehouse` 308 to /getstord/get-started-cloud-based-warehouse-management-system-wms
+- `/order-management-system/order-routing/` 308 to /order-management-system/order-routing
+- `/order-management-system/multichannel-inventory/` 308 to /order-management-system/multichannel-inventory
+- `/categories/food-and-beverage` 308 to /categories/nutrition-and-supplements
+- `/inventory-planning/` 308 to /inventory-planning
+- `/order-management-system/last-mile-optimization/` 308 to /order-management-system/last-mile-optimization
+
+</details>
+
+## minor SITE-15 2 pages have no main heading; 4 pages have several main headings \(h1\)
+
+**Why it matters.** Screen reader users jump to the h1 to learn what a page is, and search engines read it as the page's subject; none, or several competing, says neither.
+
+**Likely fix.** Give each page one h1 naming what it shows; the site's name in the header is not it.
+
+<details open>
+<summary>6 pages</summary>
+
+- `/getstord/referral-program` 2 h1: \`Love Stord?\`, \`Share the Love.\`
+- `/getstord/food-and-beverage` no h1 shown
+- `/getstord/nik-sharma` no h1 shown
+- `/newsroom/true-classic-avoids-delays-with-stord` 2 h1: \`NEWSROOM\`, \`True Classic Avoids an Inbound Supply Chain Disruption on DTC and B2B with Stord\`
+- `/newsroom/goodr-Partners-with-Stord` 2 h1: \`NEWSROOM\`, \`goodr Partners with Stord to Deliver Exceptional Fulfillment Experiences at Scal\`
+- `/newsroom/stord-leadership-forbes-interview` 2 h1: \`NEWSROOM\`, \`Stord Leadership Talks Beating Amazon Prime and the Future of AI-Powered Fulfill\`
+
+</details>
+
+## minor SITE-04 4 different pages share one title
+
+**Why it matters.** Search results, bookmarks and browser tabs show the title: pages that share one can't be told apart, and a page without one shows its address.
+
+**Likely fix.** Give each page a title of its own that names what it shows \(in a single-page app, set it on each route\).
+
+<details open>
+<summary>4 pages</summary>
+
+- `/legal/parcel-terms-02-13-26` titled \`Stord\`, shows \`Parcel Terms - Archived\`
+- `/legal/general-terms-02-13-26` titled \`Stord\`, shows \`General Terms - Archived\`
+- `/legal/uk-mailing-terms` titled \`Stord\`, shows \`UK Mailing Terms\`
+- `/legal/warehouse-terms` titled \`Stord\`, shows \`Warehouse Terms\`
+
+</details>
+
+## minor SITE-24 3 security headers no page sends
+
+**Why it matters.** Each header closes a door attackers use \(a downgrade to http, a script slipped in, the site framed in another to trick a click\). Security reviews and compliance checklists ask for them, and they cost a line of server configuration.
+
+**Likely fix.** Add the missing headers in the web server or the CDN \(one setting each\), starting with Strict-Transport-Security.
+
+<details open>
+<summary>3 pages</summary>
+
+- `/` no page of the site sends Content-Security-Policy \(which scripts may run\)
+- `/` no page of the site sends X-Frame-Options or frame-ancestors \(another site cannot frame it to trick a click\)
+- `/` no page of the site sends X-Content-Type-Options: nosniff
+
+</details>
+
+## minor SITE-13 1 image on 1 page has no alt text
+
+**Why it matters.** A screen reader reads the file name instead, or nothing; search engines lose the words that say what the image shows.
+
+**Likely fix.** Add alt="what the image shows"; for an image that is decoration only, alt="".
+
+<details open>
+<summary>1 page</summary>
+
+- `/expiration` 1 image: \`\<img src="/\_next/image?url=https%3A%2F%2Fimages.ctfassets.n…\`
+
+</details>
+
+## minor SITE-35 Requests to 1 host of other sites failed during the crawl, as seen from the crawler's machine and network
+
+**Why it matters.** A script on the page asked another site's host for data \(a third party's logging, analytics or a widget\) and got an error or no answer. This was seen from the crawler's own machine and network only: an ad blocker, the region, DNS filtering or the crawler's own network can cause the same failure, and it may not fail for real visitors. The crawl cannot tell whether a page needs the answer. Where the crawl looked the name up from here, the line says so; "does not resolve" is stronger than "the requ…
+
+**Likely fix.** If a name does not resolve, the host is probably gone: remove its snippet or tag from the site. Otherwise open the page from an ordinary browser and network; if the request works there, there is nothing to fix.
+
+<details open>
+<summary>1 page</summary>
+
+- `/` \`api.unifyintent.com\`: 71 pages asked it for data and the request failed \(401\); the name resolves from here, so the request failed for another reason
+
+</details>
+
+## minor SITE-29 The site has no security.txt: someone who finds a hole has no way to report it
+
+**Why it matters.** Researchers who find a security problem look for /.well-known/security.txt to know whom to tell \(RFC 9116\); without it they may not report it, or report it publicly.
+
+**Likely fix.** Publish /.well-known/security.txt with a Contact line \(an email address or a form\) and an Expires line.
+
+<details open>
+<summary>1 page</summary>
+
+- `/.well-known/security.txt` answered 404
+
+</details>
+
+Found by Suite Builder's crawler, which identifies itself in its User-Agent and obeys robots.txt. A major finding lets a visitor or a search engine down now; a minor one is worth fixing. Each lists every page the crawl saw it on; the crawl reads a sample of a big site, so a finding can reach further than it lists.

@@ -1,0 +1,40 @@
+{
+  "tool": "suite-builder",
+  "version": "1.39.0",
+  "build": {
+    "commit": "f7c924bf20cb611f22dd15128aefeb02f4ed9389",
+    "branch": "main"
+  },
+  "framework": "playwright",
+  "generatedAt": "2026-11-06T21:13:22.511Z",
+  "command": "suite-builder build https://www.stord.com/",
+  "templates": "crawl/www.stord.com.templates.json",
+  "crawl": "crawl/www.stord.com.crawl.json",
+  "crawlFileSaved": "2026-11-06T21:13:20.367Z",
+  "pages": {
+    "ship": "all",
+    "crawl": "e5767681d6ce236b",
+    "signedIn": false,
+    "roles": []
+  },
+  "accounts": [
+    {
+      "role": "user",
+      "file": "secrets/user.login",
+      "environment": [
+        "SUITE_USER_USERNAME",
+        "SUITE_USER_PASSWORD"
+      ],
+      "docked": "<Suite Builder's secrets folder, DOCK.md's last line>/<site>/user.login"
+    },
+    {
+      "role": "admin",
+      "file": "secrets/admin.login",
+      "environment": [
+        "SUITE_ADMIN_USERNAME",
+        "SUITE_ADMIN_PASSWORD"
+      ],
+      "docked": "<Suite Builder's secrets folder, DOCK.md's last line>/<site>/admin.login"
+    }
+  ]
+}

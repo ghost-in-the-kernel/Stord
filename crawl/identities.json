@@ -1,0 +1,423 @@
+{
+  "tool": "suite-builder",
+  "ledgerVersion": 1,
+  "entities": [
+    {
+      "id": "type:/",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "HomePage",
+      "patterns": [
+        "/"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/resources",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ResourcesPage",
+      "patterns": [
+        "/resources"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ECommerceFulfillmentPage",
+      "patterns": [
+        "/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/solution",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "SolutionPage",
+      "patterns": [
+        "/solution"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/fulfillment",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "FulfillmentPage",
+      "patterns": [
+        "/fulfillment"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/parcel",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ParcelPage",
+      "patterns": [
+        "/parcel"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/labs",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "LabsPage",
+      "patterns": [
+        "/labs"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/casestudy/stord-onboarding-for-peak-design",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "CasestudyStordOnboardingPage",
+      "patterns": [
+        "/casestudy/stord-onboarding-for-peak-design"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/locations",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "LocationsPage",
+      "patterns": [
+        "/locations"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/ai",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "AiPage",
+      "patterns": [
+        "/ai"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/casestudy/how-the-zero-proof-powers-growth-with-stord",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "CasestudyHowTheZeroPage",
+      "patterns": [
+        "/casestudy/how-the-zero-proof-powers-growth-with-stord"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/order-management-system",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "OrderManagementSystemListPage",
+      "patterns": [
+        "/order-management-system"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/getstord/referral-program",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "GetstordReferralProgramPage",
+      "patterns": [
+        "/getstord/referral-program"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/expiration",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ExpirationPage",
+      "patterns": [
+        "/expiration"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/returns",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ReturnsPage",
+      "patterns": [
+        "/returns"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/warehouse-management-system",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "WarehouseManagementSystemPage",
+      "patterns": [
+        "/warehouse-management-system"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/getstord/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "GetstordPage",
+      "patterns": [
+        "/getstord/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/order-management-system/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "OrderManagementSystemPage",
+      "patterns": [
+        "/order-management-system/*",
+        "/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/casestudy/how-jolie-grew-revenue-6x",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "CasestudyHowJolieGrewPage",
+      "patterns": [
+        "/casestudy/how-jolie-grew-revenue-6x"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/*/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "SeekToActionPage",
+      "patterns": [
+        "/*/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/legal/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "LegalPage",
+      "patterns": [
+        "/legal/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/unbox",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "UnboxPage",
+      "patterns": [
+        "/unbox"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/shipment-protection",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ShipmentProtectionPage",
+      "patterns": [
+        "/shipment-protection"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/integrations",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "IntegrationsPage",
+      "patterns": [
+        "/integrations"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/industries/b2b",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "IndustriesB2bPage",
+      "patterns": [
+        "/industries/b2b"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/newsroom/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "NewsroomPage",
+      "patterns": [
+        "/newsroom/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/blog/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "BlogPage",
+      "patterns": [
+        "/blog/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/reports/state-of-ai-2026",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ReportsStateOfAiPage",
+      "patterns": [
+        "/reports/state-of-ai-2026"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/reports/*",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ReportPage",
+      "patterns": [
+        "/reports/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/transportation/retail-delivery-consolidation",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "TransportationRetailDeliveryPage",
+      "patterns": [
+        "/transportation/retail-delivery-consolidation"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/consumer-experience/estimated-delivery-date",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "ConsumerExperienceEstimatedDeliveryPage",
+      "patterns": [
+        "/consumer-experience/estimated-delivery-date"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    },
+    {
+      "id": "type:/casestudy/quip-delights-customers-with-stord",
+      "kind": "page-type",
+      "introducedAt": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f",
+      "cls": "CasestudyQuipDelightsCustomersPage",
+      "patterns": [
+        "/casestudy/quip-delights-customers-with-stord"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "e5767681d6ce236bc511e450468c6f17f3921e1ce3f7ad892e367d31037e1f9f"
+      }
+    }
+  ]
+}
